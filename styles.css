@@ -16,6 +16,33 @@ main {
   perspective: 2px;
 }
 
+header {
+  position: absolute;
+  top: 30px;
+  left: 75%;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  z-index: 1;
+}
+
+header ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header ul li {
+  list-style: none;
+  margin-left: 2rem;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-family: sans-serif;
+}
+
 section {
   transform-style: preserve-3d;
   position: relative;
@@ -56,5 +83,6 @@ section h1 {
 
 .bg::after {
   background-size: cover;
-  background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url("./assets/galaxy.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("./assets/galaxy.jpg");
 }
