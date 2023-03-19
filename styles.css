@@ -9,21 +9,18 @@
   padding: 0;
 }
 
-main {
-  height: 100vh;
-  overflow-x: hidden;
-  overflow-y: auto;
-  perspective: 2px;
+html {
+  scroll-behavior: smooth;
 }
 
 header {
   position: absolute;
   top: 30px;
-  left: 75%;
+  left: 70%;
   display: flex;
   justify-content: space-between;
   align-items: end;
-  z-index: 1000;
+  z-index: 1;
 }
 
 header ul {
@@ -69,7 +66,7 @@ section h1 {
 
 .no-parallax {
   background-color: black;
-  z-index: 999;
+  z-index: 1;
 }
 
 .parallax h1 {
@@ -93,4 +90,19 @@ section h1 {
   background-size: cover;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("./assets/galaxy.jpg");
+}
+
+.reveal{
+  position:relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: all 2s ease;
+  z-index: 999;
+
+}
+
+.reveal.show{
+  transform: translateY(0px);
+  opacity: 1;
+  z-index: 999;
 }
