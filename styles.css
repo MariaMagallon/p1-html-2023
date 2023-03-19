@@ -23,7 +23,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: end;
-  z-index: 1;
+  z-index: 1000;
 }
 
 header ul {
@@ -34,13 +34,21 @@ header ul {
 
 header ul li {
   list-style: none;
-  margin-left: 2rem;
+  margin-left: 20px;
 }
 
 header ul li a {
-    text-decoration: none;
-    color: #fff;
-    font-family: sans-serif;
+  text-decoration: none;
+  color: #fff;
+  font-family: sans-serif;
+  border-radius: 20px;
+  padding: 6px 15px;
+}
+
+header ul li a:hover,
+header ul li a.active {
+  background-color: #fff;
+  color: black;
 }
 
 section {
