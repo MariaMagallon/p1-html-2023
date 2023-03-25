@@ -35,7 +35,7 @@ header .logo {
   color: #fff;
   text-decoration: none;
   letter-spacing: 2px;
-  font-size: 2em;
+  font-size: 30px;
 }
 
 header ul {
@@ -80,16 +80,69 @@ section {
 
 .sec1h3 {
   margin-bottom: 20px;
-  background-image: linear-gradient( 45deg, #6a48f2 20%, #fcceee);
+  background-image: linear-gradient(#6a48f2, #c792b7);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
   font-size: 22px;
 }
 
-.sec1h1 {
+.textanim {
   margin-bottom: 20px;
+}
+
+.textanim h1 {
   font-size: 104px;
+  position: relative;
+  overflow: hidden;
+}
+
+.textanim h1 .sec1h1 {
+  display: block;
+  animation: textanimation 1s backwards;
+  animation-delay: 400ms;
+  transform: rotate(0deg);
+}
+
+h1:nth-child(1) .sec1h1 {
+  animation-delay: 400ms;
+}
+
+h1:nth-child(2) .sec1h1 {
+  animation-delay: 600ms;
+}
+
+@keyframes textanimation {
+  0% {
+    transform: rotate(10deg) translateY(100%);
+    transition: all 2s ease;
+    opacity: 0;
+  }
+  100% {
+    transform: rotate(0deg) translateY(0);
+    opacity: 1;
+  }
+}
+
+.revealitem {
+  display: block;
+  animation: revealitem 2s backwards;
+  animation-delay: 900ms;
+  position: relative;
+}
+
+@keyframes revealitem {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+    transition: all 2s ease;
+    z-index: 999;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+    z-index: 999;
+  }
 }
 
 .btn {
