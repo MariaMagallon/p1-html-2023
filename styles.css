@@ -62,6 +62,11 @@ header ul li a.active {
   color: black;
 }
 
+.sticky {
+  position: fixed;
+  width: 100%;
+}
+
 section {
   transform-style: preserve-3d;
   position: relative;
