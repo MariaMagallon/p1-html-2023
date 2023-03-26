@@ -214,3 +214,89 @@ button a {
   opacity: 1;
   z-index: 999;
 }
+
+footer {
+  background-color: #171718;
+  height: 270px;
+  font-size: 15px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 40px;
+}
+
+.container div {
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+.container div p {
+  color: white;
+  padding-bottom: 20px;
+}
+
+#cr-ap, #stay {
+  color: rgba(255, 255, 255, 0.527);
+  padding-bottom: 15px;
+}
+
+.container div a {
+  color: rgba(255, 255, 255, 0.527);
+  text-decoration: none;
+  padding-bottom: 15px;
+}
+
+.container div a:hover {
+  color: white;
+}
+
+form {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.form-div {
+  display: flex;
+  flex-direction: row;
+}
+
+input {
+  display: block;
+  height: 50px;
+  width: 300px;
+  min-height: 50px;
+  margin-bottom: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 10px;
+  -webkit-box-flex: 1;
+  border-radius: 10px;
+  border: none;
+  background-color: #272525;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.025em;
+}
+
+.btn-ft {
+  margin-bottom: 20px;
+  background-color: #272525;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  padding: 16px 20px;
+  text-align: center;
+  font-size: 16px;
+  width: max-content;
+  transition: 0.3s;
+}
+
+.btn-ft:hover {
+  background-color: #6a48f2;
+  color: white;
+}
+
