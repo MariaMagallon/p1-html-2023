@@ -1,4 +1,5 @@
 window.addEventListener("scroll", () => {
+  
   var reveals = document.querySelectorAll(".reveal");
   var navbar = document.getElementById("header");
   var sticky = navbar.offsetTop;
