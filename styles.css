@@ -67,6 +67,10 @@ header ul li a.active {
   width: 100%;
 }
 
+body {
+  background-color: #000;
+}
+
 section {
   transform-style: preserve-3d;
   position: relative;
@@ -199,7 +203,7 @@ button a {
   z-index: 1;
 }
 
-.parallax h1 {
+/* .parallax h1 {
   width: 60%;
   font-size: 2rem;
 }
@@ -222,6 +226,22 @@ button a {
   background-repeat: no-repeat;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("./assets/projects.jpg");
+} */
+
+.bg {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.img-magnifier-glass {
+  position: absolute;
+  border: 3px solid #000;
+  border-radius: 50%;
+  cursor: none;
+  /*Set the size of the magnifier glass:*/
+  width: 100px;
+  height: 100px;
 }
 
 .gradient {
