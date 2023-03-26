@@ -83,6 +83,14 @@ section {
   justify-content: center;
 }
 
+.grad {
+  padding-top: 10%;
+  height: 80vh;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
 .sec1h3 {
   margin-bottom: 20px;
   background-image: linear-gradient(#6a48f2, #c792b7);
@@ -92,6 +100,19 @@ section {
   font-size: 22px;
 }
 
+.gradh1 {
+  font-size: 104px;
+  position: relative;
+  overflow: hidden;
+  color: #c3b9fc;
+}
+
+.gradh3 {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  color: #c3b9fc;
+  font-size: 22px;
+}
 .textanim {
   margin-bottom: 20px;
 }
@@ -196,14 +217,25 @@ button a {
 }
 
 .bg::after {
-  background-size: cover;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("./assets/galaxy.jpg");
+    url("./assets/projects.jpg");
+}
+
+.gradient {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("./assets/gradient-large.jpg");
+
 }
 
 .reveal {
   position: relative;
-  transform: translateY(50px);
+  transform: translateY(150px);
   opacity: 0;
   transition: all 2s ease;
   z-index: 999;
@@ -238,7 +270,8 @@ footer {
   padding-bottom: 20px;
 }
 
-#cr-ap, #stay {
+#cr-ap,
+#stay {
   color: rgba(255, 255, 255, 0.527);
   padding-bottom: 15px;
 }
@@ -299,4 +332,3 @@ input {
   background-color: #6a48f2;
   color: white;
 }
-
