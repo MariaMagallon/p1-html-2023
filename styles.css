@@ -96,7 +96,11 @@ section {
 }
 
 .sec-magnify {
-  margin-bottom: 10%;
+  height: fit-content;
+}
+
+.sec-grid {
+  height: fit-content;
 }
 
 .sec1h3 {
@@ -243,7 +247,6 @@ button a {
   border: 3px solid #000;
   border-radius: 50%;
   cursor: none;
-  /*Set the size of the magnifier glass:*/
   width: 100px;
   height: 100px;
 }
@@ -253,7 +256,7 @@ button a {
   background-position: center;
   background-repeat: no-repeat;
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url("./assets/gradient-large.jpg");
+    url("assets/images/gradient-large.jpg");
 
 }
 
@@ -269,6 +272,31 @@ button a {
   transform: translateY(0px);
   opacity: 1;
   z-index: 999;
+}
+
+.row {
+  flex-direction: row;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.row-grid {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+.column-grid {
+  flex: 50%;
+  max-width: 50%;
+}
+
+.column-grid img {
+  margin-top: 8px;
+  vertical-align: middle;
+  border-radius: 10px;
 }
 
 footer {
