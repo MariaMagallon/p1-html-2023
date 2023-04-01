@@ -101,6 +101,8 @@ section {
 
 .sec-grid {
   height: fit-content;
+  align-items: center;
+  justify-content: center;
 }
 
 .sec1h3 {
@@ -275,28 +277,79 @@ button a {
 }
 
 .row {
+  display: flex;
   flex-direction: row;
+  gap: 10px;
 }
 
 .column {
+  display: flex;
   flex-direction: column;
+  margin-top: 40px;
+  margin-bottom: 20px;
 }
 
 .row-grid {
   display: flex;
   flex-wrap: wrap;
-  padding: 0 4px;
 }
 
-.column-grid {
+.column-grid-1 {
   flex: 50%;
   max-width: 50%;
+  padding-left: 10%;
+  padding-top: 5%;
 }
 
-.column-grid img {
-  margin-top: 8px;
+.column-grid-2 {
+  flex: 50%;
+  max-width: 50%;
+  padding-right: 15%;
+}
+
+.column-grid-i {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-items: flex-end;
+  align-content: flex-end;
+}
+
+.column-grid-img {
   vertical-align: middle;
   border-radius: 10px;
+}
+
+.avatar {
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+}
+
+.avatar-name {
+  color: #fff;
+  padding-bottom: 5px;
+}
+
+.avatar-desc {
+  color: rgba(255, 255, 255, 0.527);
+}
+
+.align {
+  align-items: flex-start;
+  justify-items: flex-start;
+  align-content: flex-start;
+  padding-right: 57%;
+}
+
+#align-b {
+  align-items: flex-start;
+  justify-items: flex-start;
+  align-content: flex-start;
+  padding-right: 80%;
 }
 
 footer {
