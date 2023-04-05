@@ -92,7 +92,7 @@ function magnify() {
   }
 };
 
-//craate a draggable slider from scratch
+//create a draggable slider from scratch
 //get the elements from the class name
 const slider = document.querySelector(".slider");
 const sliderInner = document.querySelector(".slider-inner");
@@ -143,7 +143,6 @@ function checkBound() {
 };
 
 //Create Toggleable Tabs
-
 function openCategory(evt, category) {
   var i, tabcontent, tablinks;
   tabcontent = document.getElementsByClassName("tabcontent");
