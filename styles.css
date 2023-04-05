@@ -9,7 +9,7 @@
   --white: #fff;
   --desc-grey: #ffffff86;
   --btn-grey: #272525;
-  --tab-grey:#47474794;
+  --tab-grey: #47474794;
   --footer-grey: #171718;
   --grad-pink: #c792b7;
   --violet: #6a48f2;
@@ -240,6 +240,22 @@ h1:nth-child(2) .sec1h1 {
   z-index: 999;
 }
 
+@keyframes explanationmov {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(2000px);
+  }
+}
+
+.exp {
+  position: absolute;
+  animation-name: explanationmov;
+  animation: explanationmov 7s linear both;
+  animation-iteration-count: infinite;
+}
+
 /*Buttons*/
 .btn {
   margin-bottom: 20px;
@@ -367,6 +383,21 @@ button a {
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
+}
+
+.explanation {
+  position: absolute;
+  top: 2%;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  border-style: solid none;
+  border-width: 1px;
+  border-color: var(--violet);
+  background-color: var(--text-violet);
+  color: var(--black);
 }
 
 .img-magnifier-glass {
