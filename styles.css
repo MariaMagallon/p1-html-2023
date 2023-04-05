@@ -592,58 +592,16 @@ input {
 
 /*Responsive (I work with two screens so I make my website as much responsive as this two types of resolution*/
 @media (min-width: 768px) and (max-width: 1633px) {
+  
   .slider {
-    position: absolute;
-    left: 10%;
-    top: 80%;
+    top: 90%;
     bottom: 20%;
     width: 80%;
     height: 300px;
-    overflow: hidden;
-    cursor: grab;
-    display: none;
-  }
-  
-  .slider-inner {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 220%;
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-gap: 50px;
-    pointer-events: none;
-  }
-  
-  .slider-img {
-    position: relative;
-    height: 100%;
-    border: 1px none;
-    border-radius: 1rem;
-    overflow: hidden;
-    z-index: 1;
-  }
-  
-  .img-obj {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    z-index: 2;
   }
   
   .desc-div {
-    position: absolute;
-    width: 100%;
-    height: 100px;
-    object-fit: cover;
-    background-color: var(--btn-grey);
-    border-bottom: 1px none;
     margin-top: 60%;
-    padding-left: 20px;
-    padding-top: 15px;
-    z-index: 3;
   }
   
   .align {
